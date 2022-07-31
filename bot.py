@@ -158,7 +158,7 @@ async def help(bot, message):
     await message.reply_text(
         text=C.HELP,
         reply_markup=InlineKeyboardMarkup([
-            [ InlineKeyboardButton(text="🛠SUPPORT🛠", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="📮UPDATES📮", url=f"{C.UPDATE_CHANNEL}")]
+            [ InlineKeyboardButton(text="🛠sᴜᴘᴘᴏʀᴛ🛠", url=f"{C.SUPPORT_GROUP}"), InlineKeyboardButton(text="📮UPDATES📮", url=f"{C.UPDATE_CHANNEL}")]
         ])
     )
 
@@ -211,7 +211,7 @@ async def opensettings(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton(text=f"NOTIFICATION  {'🔔' if ((await db.get_notif(user_id)) is True) else '🔕'}",callback_data="notifon")],
-                    [InlineKeyboardButton(text="CLOSE", callback_data="closeMeh")],
+                    [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="closeMeh")],
                 ]
             )
         )
